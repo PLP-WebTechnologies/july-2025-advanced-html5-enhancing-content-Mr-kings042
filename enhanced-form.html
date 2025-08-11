@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Mr Kings">
+    <meta description="An enhanced HTML5 form with native validation, lists, tables, and media examples.">
+    <title>Enhanced Form </title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Multi-Section Page</h1>
+        <p>This page shows lists, tables, media, and a complete HTML5 form with HTML validation.</p>
+    </header>
+
+    <main>
+
+        <!-- Section: Lists -->
+        <section>
+            <h2>My Favorite Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Go</li>
+                <li>Rust</li>
+            </ul>
+
+            <h3>Steps to Deploy a Web App</h3>
+            <ol>
+                <li>Write and test your code.</li>
+                <li>Push to a version control system like GitHub.</li>
+                <li>Set up hosting or a cloud service.</li>
+                <li>Deploy and monitor performance.</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>Project Overview Table</h2>
+            <table border="1">
+                <caption>Recent Projects</caption>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Language</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td>HTML, CSS</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Task Manager API</td>
+                        <td>Python, FastAPI</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Realtime Chat App</td>
+                        <td>Node.js, Socket.IO</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Media -->
+        <section>
+            <h2>Media Examples</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1743449661678-c22cd73b338a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder for image">
+                <figcaption>A sample unsplash image.</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Sample audio clip.</figcaption>
+            </figure>
+            <figure>
+                <video controls width="400">
+                    <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <figcaption>Sample video clip.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section: HTML5 Form -->
+        <section>
+            <h2>Contact / Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John kings" required minlength="3" maxlength="50">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="John@mail.com" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?[0-9]{7,15}$" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="username123" required minlength="4" maxlength="20">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter a secure password">
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" placeholder="Re-enter your password">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="language">Preferred Programming Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="">--Select--</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="go">Go</option>
+                        <option value="rust">Rust</option>
+                    </select>
+
+                    <p>Subscription Options:</p>
+                    <label>
+                        <input type="radio" name="subscription" value="daily" required> Daily
+                    </label>
+                    <label>
+                        <input type="radio" name="subscription" value="weekly"> Weekly
+                    </label>
+                    <label>
+                        <input type="radio" name="subscription" value="monthly"> Monthly
+                    </label>
+
+                    <p>Topics of Interest:</p>
+                    <label>
+                        <input type="checkbox" name="topics" value="backend"> Backend Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topics" value="frontend"> Frontend Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topics" value="devops"> DevOps
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="bio">Short Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself" required></textarea>
+
+                    <label for="website">Personal Website:</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Multi-Section Page</p>
+    </footer>
+
+</body>
+</html>
